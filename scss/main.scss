@@ -1,0 +1,107 @@
+@import 'reset.css';
+.container {
+    max-width: 1244px;
+    margin: auto;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.block-title {
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #017382;
+    margin-top: 140px;
+}
+
+.sub-title {
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 10px;
+}
+
+.plus {
+    position: relative;
+    &:after {
+        content: '';
+        width: 2px;
+        height: 12px;
+        background: #222;
+        border-radius: 1px;
+        position: absolute;
+        top: -7px;
+        left: 0;
+    }
+    &:before {
+        content: '';
+        width: 2px;
+        height: 12px;
+        background: #222;
+        border-radius: 1px;
+        position: absolute;
+        top: -7px;
+        left: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+.plus_right {
+    position: relative;
+    &:after {
+        content: '';
+        width: 2px;
+        height: 12px;
+        background: #222;
+        border-radius: 1px;
+        position: absolute;
+        top: -7px;
+        right: 0;
+    }
+    &:before {
+        content: '';
+        width: 2px;
+        height: 12px;
+        background: #222;
+        border-radius: 1px;
+        position: absolute;
+        top: -7px;
+        right: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+@import 'credit-problems';
+@import 'work-us';
+@import 'start-us';
+@import 'service';
+@import 'cases';
+@import "banner.scss";
+@import "header";
+@import "reviews";
+@import "questions";
+@import "cooperation";
+@import "mission";
+@import "map";
+@import "feedback-form";
+@import "footer";
+@import "btn";

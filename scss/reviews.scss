@@ -1,0 +1,108 @@
+.reviews{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+        height: 500px;
+    &_wrap{
+        background: #FFFFFF;
+        border: 2px solid #F2F3F5; 
+        box-sizing: border-box;
+        border-radius: 2px 2px 20px 2px;
+        width: 49%;
+        padding: 32px;
+        position: relative;
+        margin: 10px 0 20px 4px;
+        &:after{
+            position: absolute;
+            content: " ";
+            width: 12px;
+            height: 2px;
+            background: #222222;
+            border-radius: 1px;
+            left: -6px;
+            top: -1px;
+        }
+        &:before{
+            position: absolute;
+            content: " ";
+            width: 2px;
+            height: 12px;
+            background: #222222;
+            border-radius: 1px;
+            left: -1px;
+            top: -6px;
+        }
+        &__img{
+            padding-right: 24px;
+        }
+        &__content-name{
+            :nth-child(1){
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                color: #222222;
+            }
+            :nth-child(2){
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #017382;
+            }
+        }
+        &__content-text{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #222222;
+            padding-top: 16px;
+        }
+    }
+    &_btn{
+        background: #FFFFFF;
+        border: 1px solid #017382;
+        box-sizing: border-box;
+        box-shadow: 0px 6px 20px rgba(1, 115, 130, 0.36);
+        border-radius: 2px;
+        margin: auto;
+        cursor: pointer;
+        max-width: fit-content;
+        padding: 22px 49px;
+        margin-top: 48px;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: " ";
+            width: 12px;
+            height: 1px;
+            background: #017382;
+            border-radius: 1px;
+            left: -6px;
+            top: -1px;
+        }
+        &:before{
+            position: absolute;
+            content: " ";
+            width: 1px;
+            height: 12px;
+            background: #017382;
+            border-radius: 1px;
+            left: -1px;
+            top: -6px;
+            z-index: 2;
+        }
+        span{
+            font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #017382;
+        }
+    }
+    &_btn-active{
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+.mission{
+    &_wrap{
+        width: 100%;
+        background: #FFFFFF;
+        border: 2px solid #F2F3F5;
+        box-sizing: border-box;
+        box-shadow: 0px 8px 28px rgba(123, 104, 4, 0.12);
+        padding:64px 0 98px 109px;
+        position: relative;
+        &__content{
+            width: 41%;
+            position: relative;
+            margin-left: -25px;
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                color: #222222;
+            }
+            &:after{
+                position: absolute;
+                content: " ";
+                width: 12px;
+                height: 2px;
+                background: #222222;
+                border-radius: 1px;
+                left: -32px;
+                top: -1px;
+            }
+            &:before{
+                position: absolute;
+                content: " ";
+                width: 2px;
+                height: 12px;
+                background: #222222;
+                border-radius: 1px;
+                left: -27px;
+                top: -6px;
+                z-index: 2;
+            }
+        }
+        &__img{
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.work-us {
+    &_item {
+        position: relative;
+        margin-top: 120px;
+        padding-top: 80px;
+        display: flex;
+        &:nth-child(even) {
+            justify-content: flex-end;
+            .work-us_item_content {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    &_item_content {
+        background: #FFFFFF;
+        border: 2px solid #F2F3F5;
+        box-sizing: border-box;
+        box-shadow: 0px 8px 28px rgba(123, 104, 4, 0.12);
+        border-radius: 2px 2px 26px 2px;
+        padding: 32px;
+        position: relative;
+        max-width: 850px;
+        width: 100%;
+    }
+    &_item_content-title {
+        font-family: 'Harmonia Sans Pro Cyr';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+    &_item_content-text {
+        font-family: ' Harmonia Sans Pro Cyr';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        max-width: 570px;
+    }
+    &_item_img {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 0;
+        text-align: center;
+        img {
+            position: relative;
+            z-index: 1;
+            &:nth-child(2) {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 0;
+            }
+        }
+        &.item_img_2 {
+            left: 60px;
+            top: 70px;
+        }
+        &.item_img_3 {
+            right: 25px;
+            top: 30px;
+        }
+        &.item_img_4 {
+            left: 30px;
+            top: 52px;
+        }
+        &.item_img_5 {
+            right: 25px;
+            top: 30px;
+        }
+    }
+}

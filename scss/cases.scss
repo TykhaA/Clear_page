@@ -1,0 +1,89 @@
+.cases-block {
+    .cases-block-content {
+        margin-top: 50px;
+        position: relative;
+    }
+    .cases-block-row {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .cases-block-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32%;
+        min-height: 250px;
+        margin-right: 19px;
+        border: 2px solid #F2F3F5;
+        box-sizing: border-box;
+        padding: 30px;
+        -webkit-clip-path: polygon(100% 0, 100% 75%, 82% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 80%, 82% 100%, 0 100%, 0 0);
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: -3px;
+            border-top-left-radius: 50%;
+            width: 70px;
+            height: 51px;
+            background: #F2F3F5;
+            box-sizing: border-box;
+            -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%, 0 0);
+            clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%, 0 0);
+        }
+        .cases-block-item-number {
+            font-family: 'Harmonia Sans Pro Cyr';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            color: #FFD133;
+            margin-bottom: 20px;
+        }
+        .cases-block-item-text {
+            font-family: 'Harmonia Sans Pro Cyr';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #222222;
+        }
+        .cases-block-item-btn-block {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            .cases-block-item-btn {
+                max-width: 116px;
+                border-radius: 2px;
+                background: #FFD133;
+                box-shadow: 0px 6px 20px rgba(255, 209, 51, 0.36);
+                text-align: center;
+                a {
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                    padding: 16px;
+                    display: inline-block;
+                    font-family: 'Harmonia Sans Pro Cyr';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #222222;
+                }
+            }
+            .cases-block-item-link {
+                font-family: 'Harmonia Sans Pro Cyr';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: #555555;
+                margin-left: 16px;
+            }
+        }
+    }
+    .cases-block-img {
+        position: absolute;
+        right: 0;
+        bottom: -135px;
+    }
+}

@@ -1,0 +1,43 @@
+.cooperation{
+    &_wrap{
+        flex-wrap: wrap;
+        background: #FFFFFF;
+        border: 2px solid #F2F3F5;
+        box-sizing: border-box;
+        border-radius: 2px 2px 16px 2px;
+        position: relative;
+        padding: 36px 76px 0 75px;
+        justify-content: space-between;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: " ";
+            width: 12px;
+            height: 2px;
+            background: #222222;
+            border-radius: 1px;
+            left: -6px;
+            top: -1px;
+        }
+        &:before{
+            position: absolute;
+            content: " ";
+            width: 2px;
+            height: 12px;
+            background: #222222;
+            border-radius: 1px;
+            left: -1px;
+            top: -6px;
+            z-index: 2;
+        }
+        &__block{
+            width: 20%;
+            padding-bottom: 63px;
+        }
+        &__position{
+            position: absolute;
+            top: -204px;
+            right: 0;
+        }
+    }
+}

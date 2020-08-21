@@ -1,0 +1,41 @@
+.credit-problems {
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    .plus {
+        background: #FFFFFF;
+    }
+    &_item {
+        position: relative;
+        width: 404px;
+        height: 205px;
+        text-align: center;
+        border: 2px solid #FFD133;
+        box-sizing: border-box;
+        box-shadow: 0px 8px 28px rgba(123, 104, 4, 0.12);
+        padding: 32px 0;
+        -webkit-clip-path: polygon(100% 0, 100% 75%, 82% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 75%, 82% 100%, 0 100%, 0 0);
+        .text {
+            margin-top: 17px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #555555;
+        }
+        .triangl {
+            position: absolute;
+            bottom: -2px;
+            right: -3px;
+            border-top-left-radius: 50%;
+            width: 72px;
+            height: 52px;
+            background: #FFD133;
+            box-sizing: border-box;
+            -webkit-clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%, 0 0);
+            clip-path: polygon(100% 0, 100% 0, 0 100%, 0 100%, 0 0);
+        }
+    }
+}

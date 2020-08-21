@@ -1,0 +1,53 @@
+footer{
+    background: #FFD133;
+    padding:32px 0;
+    margin-top: 140px;
+    .footer{
+        justify-content: space-between;
+        &_wrap-block{
+            width: 25%;
+            justify-content: space-between;
+        }
+        &_wrap-logo{
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: #222222;
+                margin-top: 31px;
+            }
+        }
+        .privacy_policy{
+            width: 50%;
+            a{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: #222222;
+                text-decoration:underline;
+            }
+        }
+        &_wrap-contact{
+            width: 26%;
+            &__number{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                color: #222222;
+                text-align: right;
+            }
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: #222222;
+                text-align: right;
+                padding-top: 21px;
+            }
+        }
+    }
+}

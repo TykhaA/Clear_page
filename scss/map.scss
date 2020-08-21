@@ -1,0 +1,11 @@
+.map{
+    background-image: url(img/map.svg);
+    width: 100%;
+    height: 544px;
+    position: relative;
+    .pin{
+        position: absolute;
+        top: 236px;
+        right: 558px;
+    }
+}

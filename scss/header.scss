@@ -1,0 +1,48 @@
+.header{
+    justify-content: space-between;
+    padding-top: 35px;
+    &_logo{
+        img{
+            width: 100%;
+        }
+    }
+    &_nav{
+        @media screen and (max-width: 1200px){
+            display: none;
+        }
+        li{
+            margin-right: 32px;
+            a{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__wrap-contact{
+        justify-content: space-between;
+    }
+    &_contact{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &_user{
+        background: #FFD133;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 32px;
+        cursor: pointer;
+    }
+}
